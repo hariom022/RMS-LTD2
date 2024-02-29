@@ -3,11 +3,16 @@
 @font-face {
   font-family: "Avenir-Medium";
   src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot");
-  src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir-Medium")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir-Medium")
+      format("svg");
 }
 * {
   margin: 0;
@@ -113,14 +118,12 @@ div.container-fluid {
 .inventry-info h5 {
   font-size: 20px !important;
   font-weight: 600px !important;
-  
 }
 
 .inventry-table {
   margin: 80px 0px 50px 350px;
   border: 2px solid gray;
   box-shadow: 2px 2px 10px gray;
-
 }
 .sale-order {
   display: flex;
@@ -141,38 +144,35 @@ div.container-fluid {
   /* transform: translatey(-5px );
   transition: 0.3s; */
 }
-.inventry-values:hover{
-  transform: translate(-5px , -5px, -5px);
+.inventry-values:hover {
+  transform: translate(-5px, -5px, -5px);
   box-shadow: 2px 2px 20px gray;
   transition: 0.2s;
 }
 
 .purchases-selling-container {
   margin: 50px 0px 0px 350px;
-  
 }
-.purchases-selling-row{
+.purchases-selling-row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 .purchases-selling-container .purchases-container {
   border: 2px solid gray;
 }
-.purchases-container:hover{
-  transform: translate(-5px , -5px, -5px);
+.purchases-container:hover {
+  transform: translate(-5px, -5px, -5px);
   box-shadow: 2px 2px 20px gray;
   transition: 0.2s;
 }
 .top-selling-container {
   border: 2px solid gray;
 }
-.top-selling-container:hover{
-  transform: translate(-5px , -5px, -5px);
+.top-selling-container:hover {
+  transform: translate(-5px, -5px, -5px);
   box-shadow: 2px 2px 20px gray;
   transition: 0.2s;
-
 }
 .top-selling {
   display: flex;
@@ -196,13 +196,9 @@ div.container-fluid {
   .search-bar {
     display: none;
   }
-  .inventry-values{
-    margin: 50px  10px 0px 0px;
-    
-    
-    
+  .inventry-values {
+    margin: 50px 10px 0px 0px;
   }
-
 }
 
 .bar-chart {
@@ -236,7 +232,6 @@ div.container-fluid {
   .inventry-info {
     margin-left: 0px !important;
     display: flex;
-    
   }
   .inventry-table {
     margin: 40px 0px !important;
@@ -246,7 +241,7 @@ div.container-fluid {
     display: flex;
     justify-content: center;
   }
-  .purchases-selling-row{
+  .purchases-selling-row {
     display: flex;
     justify-content: center !important;
   }

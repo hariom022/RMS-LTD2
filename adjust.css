@@ -3,162 +3,154 @@
 @font-face {
   font-family: "Avenir-Medium";
   src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot");
-  src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir-Medium")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir-Medium")
+      format("svg");
 }
-
 
 :root {
-    --primary-color: #f4f5f6 !important;
-    --secondary-color:#054d6f !important;
-  }
-  body {
-    font-family: "Avenir-Medium" !important;
-    overflow-x: hidden !important;
-   
-  }
-  hr{
-    margin: 0px !important;
-  }
-  div.container-fluid{
-    --bs-gutter-x: none !important;
-  }
-  .header {
-    background: #fff;
-    padding: 10px 40px;
-    overflow-x: hidden !important;
-    box-shadow: 2px 2px 24px #b7a5a5;
-  }
-  .header .social-media a {
-    color: white;
-    font-size: 23px;
-  }
-  
-  .search-bar {
-    background-color: rgb(238 235 235);
-    height: 30px;
-    width: 300px;
-    border-radius: 10px;
-  }
-  .search-bar input {
-    border: none;
-    outline: none;
-    height: 30px;
-    border-radius: 10px;
-    margin-left: 10px;
-    background-color: rgb(238 235 235);
-  }
+  --primary-color: #f4f5f6 !important;
+  --secondary-color: #054d6f !important;
+}
+body {
+  font-family: "Avenir-Medium" !important;
+  overflow-x: hidden !important;
+}
+hr {
+  margin: 0px !important;
+}
+div.container-fluid {
+  --bs-gutter-x: none !important;
+}
+.header {
+  background: #fff;
+  padding: 10px 40px;
+  overflow-x: hidden !important;
+  box-shadow: 2px 2px 24px #b7a5a5;
+}
+.header .social-media a {
+  color: white;
+  font-size: 23px;
+}
 
-  .social-media .fa-facebook-f {
-    font-size: 23px;
-    padding: 10px 14px;
-  }
-  .social-media a i {
-    margin: 0 10px;
-    background-color: #078ece;
-  
-    border-radius: 50%;
-    padding: 10px;
-    display: inline-block;
-  }
-  .social-media i:hover {
-    color: blue;
-    background-color: white;
-    transition: 0.3s ease-in-out;
-    border: 1px solid blue;
-  }
-  .logo img{
-    margin: 0px 10px 0px 20px;
-  }
-  
-  .navbar{
- 
-    height: 90vh ;
-    top: 0px;
-    display: inline-block;
-    position: fixed !important;
-    background-color:  #33339a!important;
-    margin-top: 80px;
-    
-    
-  }
- .navbar ul{
+.search-bar {
+  background-color: rgb(238 235 235);
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+}
+.search-bar input {
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: rgb(238 235 235);
+}
+
+.social-media .fa-facebook-f {
+  font-size: 23px;
+  padding: 10px 14px;
+}
+.social-media a i {
+  margin: 0 10px;
+  background-color: #078ece;
+
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+}
+.social-media i:hover {
+  color: blue;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid blue;
+}
+.logo img {
+  margin: 0px 10px 0px 20px;
+}
+
+.navbar {
+  height: 90vh;
+  top: 0px;
+  display: inline-block;
+  position: fixed !important;
+  background-color: #33339a !important;
+  margin-top: 80px;
+}
+.navbar ul {
   margin: 20px 50px 20px 30px !important;
-  }
-  .nav-item .nav-link i{
-    margin-right: 18px;
-  }
-
-  .bg-body-tertiary {
-    --bs-bg-opacity: none;
-    background-color: none !important;
 }
-  .navbar ul li{
-    margin-top: 20px;
-  }
-  .navbar ul li a{
-    color: ghostwhite;
-  }
-  .navbar ul li:hover{
-    background-color: white;
-    color: black;
-    transition: 0.3s ease-in;
-  }
-.adjust-inventry-table{
-    background-color: rgb(66, 57, 57);
-    color: white;
-    padding: 10px 5px;
-    
-}
-.adjust-inventry p{
-    margin-bottom: 0px !important;
+.nav-item .nav-link i {
+  margin-right: 18px;
 }
 
-.adjust-inventry .add-btn{
-    margin: 10px 20px;
+.bg-body-tertiary {
+  --bs-bg-opacity: none;
+  background-color: none !important;
+}
+.navbar ul li {
+  margin-top: 20px;
+}
+.navbar ul li a {
+  color: ghostwhite;
+}
+.navbar ul li:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in;
+}
+.adjust-inventry-table {
+  background-color: rgb(66, 57, 57);
+  color: white;
+  padding: 10px 5px;
+}
+.adjust-inventry p {
+  margin-bottom: 0px !important;
+}
+
+.adjust-inventry .add-btn {
+  margin: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+.adjust-inventry .add-btn a {
+  background: #078ece;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+}
+.adjust-inventry td:hover {
+  color: white;
+  background-color: black;
+}
+.adjust-inventry th:hover {
+  color: white;
+  background-color: black;
+}
+.adjust-inventry .add-btn a:hover {
+  background-color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 767px) {
+  .search-bar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .inventry-info {
+    margin-left: 0px !important;
     display: flex;
-    justify-content: flex-end
-}
-.adjust-inventry .add-btn a{
-    background: #078ece;
-    margin: 10px;color: white;
-    font-weight: bold;
-
-}
-.adjust-inventry td:hover{
-    color: white;
-    background-color: black;
-}
-.adjust-inventry th:hover{
-    color: white;
-    background-color: black;
-}
-.adjust-inventry .add-btn a:hover{
-    background-color: var(--secondary-color);
-}
-
-
-
-  @media only screen and (max-width: 767px) {
-   
-    .search-bar {
-      display: none;
-    }
-   
-}
-@media only screen and (max-width: 992px){
- 
-    .inventry-info{
-      margin-left: 0px !important;
-      display: flex;
-      /* justify-content: center; */
-    }
-    .adjust-inventry{
-        margin-left: 0px !important;
-    }
-   
-  
+    /* justify-content: center; */
   }
+  .adjust-inventry {
+    margin-left: 0px !important;
+  }
+}
