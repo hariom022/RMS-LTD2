@@ -1,0 +1,253 @@
+@import url(https://db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir-Medium);
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot");
+  src: url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir-Medium")format("svg");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #f4f5f6 !important;
+  --secondary-color: #054d6f !important;
+}
+body {
+  overflow-x: hidden !important;
+  font-family: "Avenir-Medium" !important;
+}
+hr {
+  margin: 0px !important;
+}
+div.container-fluid {
+  --bs-gutter-x: none !important;
+}
+.header {
+  background: #fff;
+  padding: 10px 40px;
+  overflow-x: hidden !important;
+  box-shadow: 2px 2px 24px #b7a5a5;
+}
+.header .social-media a {
+  color: white;
+  font-size: 23px;
+}
+
+.search-bar {
+  background-color: rgb(238 235 235);
+  height: 30px;
+  width: 300px;
+  border-radius: 10px;
+}
+.search-bar input {
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: rgb(238 235 235);
+}
+
+.social-media .fa-facebook-f {
+  font-size: 23px;
+  padding: 10px 14px;
+}
+.social-media a i {
+  margin: 0 10px;
+  background-color: #078ece;
+
+  border-radius: 50%;
+  padding: 10px;
+  display: inline-block;
+}
+.social-media i:hover {
+  color: blue;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid blue;
+}
+.logo img {
+  margin: 0px 10px 0px 20px;
+}
+
+.navbar {
+  height: 90vh;
+  top: 0px;
+  display: inline-block;
+  position: fixed !important;
+  background-color: #33339a !important;
+  margin-top: 80px;
+  z-index: 2;
+}
+.navbar ul {
+  margin: 20px 50px 20px 30px !important;
+}
+.nav-item .nav-link i {
+  margin-right: 18px;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: none;
+  background-color: none !important;
+}
+.navbar ul li {
+  margin-top: 20px;
+}
+.navbar ul li a {
+  color: ghostwhite;
+}
+.navbar ul li:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease-in;
+}
+.inventry-info {
+  margin: 132px 0px 0px 310px;
+}
+.inventry-info h5 {
+  font-size: 20px !important;
+  font-weight: 600px !important;
+  
+}
+
+.inventry-table {
+  margin: 80px 0px 50px 350px;
+  border: 2px solid gray;
+  box-shadow: 2px 2px 10px gray;
+
+}
+.sale-order {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px 0px 20px;
+}
+.inventry-table .table-container {
+  margin: 0px 50px;
+  text-align: center;
+}
+.inventry-values {
+  border: 2px solid rgb(210, 193, 193);
+  width: 300px;
+  margin: 20px 10px 10px 30px;
+  align-items: center;
+  font-size: 20px;
+  height: 100%;
+  /* transform: translatey(-5px );
+  transition: 0.3s; */
+}
+.inventry-values:hover{
+  transform: translate(-5px , -5px, -5px);
+  box-shadow: 2px 2px 20px gray;
+  transition: 0.2s;
+}
+
+.purchases-selling-container {
+  margin: 50px 0px 0px 350px;
+  
+}
+.purchases-selling-row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.purchases-selling-container .purchases-container {
+  border: 2px solid gray;
+}
+.purchases-container:hover{
+  transform: translate(-5px , -5px, -5px);
+  box-shadow: 2px 2px 20px gray;
+  transition: 0.2s;
+}
+.top-selling-container {
+  border: 2px solid gray;
+}
+.top-selling-container:hover{
+  transform: translate(-5px , -5px, -5px);
+  box-shadow: 2px 2px 20px gray;
+  transition: 0.2s;
+
+}
+.top-selling {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 33px;
+}
+
+.row {
+  --bs-gutter-x: none !important;
+}
+.inventry-values h4 {
+  background-color: #078ece;
+  color: #000000;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .search-bar {
+    display: none;
+  }
+  .inventry-values{
+    margin: 50px  10px 0px 0px;
+    
+    
+    
+  }
+
+}
+
+.bar-chart {
+  width: 100%;
+  max-width: 600px; /* Adjust the width as needed */
+  margin: 0 auto;
+  margin-left: 68px; /* Center the chart */
+}
+
+.bar {
+  display: inline-block;
+  width: 5px; /* Width of each bar */
+  margin-right: 10px; /* Space between bars */
+  background-color: #007bff; /* Bar color */
+}
+
+/* Adjust bar height based on data */
+.bar-1 {
+  height: 80px;
+}
+.bar-2 {
+  height: 90px;
+}
+.bar-3 {
+  height: 40px;
+}
+.bar-4 {
+  height: 20px;
+}
+@media only screen and (max-width: 992px) {
+  .inventry-info {
+    margin-left: 0px !important;
+    display: flex;
+    
+  }
+  .inventry-table {
+    margin: 40px 0px !important;
+  }
+  .purchases-selling-container {
+    margin: 50px 0px 0px 0px !important ;
+    display: flex;
+    justify-content: center;
+  }
+  .purchases-selling-row{
+    display: flex;
+    justify-content: center !important;
+  }
+}
