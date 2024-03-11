@@ -73,6 +73,9 @@ div.container-fluid {
   transition: 0.3s ease-in-out;
   border: 1px solid blue;
 }
+.header .social-media .dropdown{
+  font-size: 16px !important;
+}
 .logo img {
   margin: 0px 10px 0px 20px;
 }
@@ -107,38 +110,53 @@ div.container-fluid {
   color: black;
   transition: 0.3s ease-in;
 }
-.adjust-inventry-table {
+.inventory-update-table {
   background-color: rgb(66, 57, 57);
   color: white;
   padding: 10px 5px;
 }
-.adjust-inventry p {
+.inventory-update p {
   margin-bottom: 0px !important;
 }
 
-.adjust-inventry .add-btn {
+.updated-btn button{
+  border: none;
+  background-color: rgb(23, 23, 128);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.inventory-update .add-btn {
   margin: 10px 20px;
   display: flex;
   justify-content: flex-end;
 }
-.adjust-inventry .add-btn a {
+.inventory-update .add-btn a {
   background: #078ece;
   margin: 10px;
   color: white;
   font-weight: bold;
 }
-.adjust-inventry td:hover {
+.inventory-update td:hover {
   color: white;
   background-color: black;
 }
-.adjust-inventry th:hover {
+.inventory-update th:hover {
   color: white;
   background-color: black;
 }
-.adjust-inventry .add-btn a:hover {
+.inventory-update .add-btn a:hover {
   background-color: var(--secondary-color);
 }
-
+@media only screen and (max-width: 408px) {
+  .social-media .fa-facebook-f{
+    display: none;
+  }
+  .social-media .fa-twitter{
+    display: none;
+  }
+}
 @media only screen and (max-width: 767px) {
   .search-bar {
     display: none;
@@ -150,7 +168,7 @@ div.container-fluid {
     display: flex;
     /* justify-content: center; */
   }
-  .adjust-inventry {
+  .inventory-update {
     margin-left: 0px !important;
   }
 }

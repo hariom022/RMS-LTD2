@@ -74,6 +74,9 @@ div.container-fluid {
   transition: 0.3s ease-in-out;
   border: 1px solid blue;
 }
+.header .social-media .dropdown{
+  font-size: 16px !important;
+}
 .logo img {
   margin: 0px 10px 0px 20px;
 }
@@ -178,6 +181,14 @@ p {
   }
   .Highest-stock {
     margin-left: 60px;
+  }
+}
+@media only screen and (max-width: 408px) {
+  .social-media .fa-facebook-f{
+    display: none;
+  }
+  .social-media .fa-twitter{
+    display: none;
   }
 }
 @media only screen and (max-width: 992px) {

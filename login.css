@@ -1,0 +1,33 @@
+body {
+ 
+    background-image: url(./Image/login-bg.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+  }
+  .form-login {
+    max-width: 330px;
+    background-color: #fff;
+    padding: 15px 20px 50px 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  .login-btn{
+    background-color: aqua;
+    width: 100%;
+    color: #fff;
+    background-image: linear-gradient(to right, red, yellow, green);
+    border: none;
+    font-weight: bold;
+    color: black;
+  }
+
+  .sign-up{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+  }

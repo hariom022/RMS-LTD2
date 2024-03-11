@@ -14,14 +14,18 @@
     url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir-Medium")
       format("svg");
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --primary-color: #f4f5f6 !important;
   --secondary-color: #054d6f !important;
 }
 body {
-  font-family: "Avenir-Medium" !important;
   overflow-x: hidden !important;
+  font-family: "Avenir-Medium" !important;
 }
 hr {
   margin: 0px !important;
@@ -111,6 +115,23 @@ div.container-fluid {
   color: black;
   transition: 0.3s ease-in;
 }
+.role-container{
+  box-shadow: 2px 2px 20px gray;
+  padding: 10px;
+  margin-top: 20px;
+}
+.roles-authentication-container .auth a{
+  background: #078ece;
+  color: white;
+  font-weight: bold;
+   
+}
+.roles-authentication-container .auth a:hover{
+  background-color: var(--secondary-color);
+}
+.users .user-name{
+  cursor: pointer;
+}
 @media only screen and (max-width: 408px) {
   .social-media .fa-facebook-f{
     display: none;
@@ -123,17 +144,15 @@ div.container-fluid {
   .search-bar {
     display: none;
   }
+  .auth-text{
+    display: block !important;
+  }
+ 
+ 
 }
 @media only screen and (max-width: 992px) {
-  /* .navbar{
-    height: 40vh;
-  } */
-  .inventry-info {
-    margin-left: 0px !important;
-    display: flex;
-    /* justify-content: center; */
-  }
-  .chart-sec {
-    margin: 80px 0px 0px 0px !important;
+ 
+  .auth-container {
+    margin: 90px 10px 0px 10px !important;
   }
 }

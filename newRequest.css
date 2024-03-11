@@ -14,14 +14,18 @@
     url("https://db.onlinewebfonts.com/t/2090551770be22b09600a40b0b4673b7.svg#Avenir-Medium")
       format("svg");
 }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --primary-color: #f4f5f6 !important;
   --secondary-color: #054d6f !important;
 }
 body {
-  font-family: "Avenir-Medium" !important;
   overflow-x: hidden !important;
+  font-family: "Avenir-Medium" !important;
 }
 hr {
   margin: 0px !important;
@@ -111,6 +115,57 @@ div.container-fluid {
   color: black;
   transition: 0.3s ease-in;
 }
+
+.new-product button{
+ 
+  outline: none;
+  border: none;
+  padding: 10px 60px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  color: #fff;
+
+
+}
+.new-request-container p{
+  background-color: #fbb2b2;
+  text-align: center;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 0px;
+  width: 50%;
+  
+
+}
+.new-request-container p:hover{
+  background-color: #078ece;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.submit-btn{
+  margin-top: 250px;
+  color: #fff;
+}
+.submit-btn a{
+  outline: none;
+  border: none;
+  padding: 10px 60px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.dropdown-menu{
+  --bs-dropdown-zindex: 0 !important;
+
+}
+.btn-group{
+  position: static !important;
+  
+}
+
 @media only screen and (max-width: 408px) {
   .social-media .fa-facebook-f{
     display: none;
@@ -120,20 +175,14 @@ div.container-fluid {
   }
 }
 @media only screen and (max-width: 767px) {
-  .search-bar {
-    display: none;
+    .search-bar {
+      display: none;
+    }
   }
-}
-@media only screen and (max-width: 992px) {
-  /* .navbar{
-    height: 40vh;
-  } */
-  .inventry-info {
-    margin-left: 0px !important;
-    display: flex;
-    /* justify-content: center; */
+  @media only screen and (max-width: 992px) {
+   
+    .new-request{
+      margin: 120px 85px 0px 0px !important;
+      width: 100% !important  ;
+    }
   }
-  .chart-sec {
-    margin: 80px 0px 0px 0px !important;
-  }
-}

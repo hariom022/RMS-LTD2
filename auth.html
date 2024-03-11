@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://db.onlinewebfonts.com/c/2090551770be22b09600a40b0b4673b7?family=Avenir-Medium"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="auth.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header fixed-top">
+        <div
+          class="container-fluid d-flex justify-content-between align-items-center"
+        >
+          <div class="logo d-flex align-items-center">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"
+                  ><i class="fa fa-bars" aria-hidden="true"></i
+                ></span>
+              </button>
+            </div>
+
+            <img src="rmslogo.jpeg" alt="" img-fluid height="60" />
+          </div>
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button
+              style="
+                border: none;
+                outline: none;
+                float: right;
+                margin: 4px;
+                background-color: rgb(238 235 235);
+              "
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="social-media d-flex align-items-center">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="dropdown " href="login.html">
+              <a href="./login.html" class="btn btn-secondary dropdown-toggle dropdown" type="button" aria-expanded="false">
+                 Admin
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper col-lg-11">
+        <!-- --------------------------Side Navbar-------------------- -->
+        <nav
+          class="navbar navbar-expand-lg bg-body-tertiary"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <div class="container-fluid" style="background-color: #33339a">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./index.html"
+                    ><i class="fa-solid fa-gauge-high fs-5"></i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <hr />
+                <li class="nav-item">
+                  <a class="nav-link" href="./goodsReceipt.html"
+                    ><i class="fa-solid fa-cart-shopping fs-5"></i
+                    ><span>User Management</span>
+                  </a>
+                </li>
+                <hr />
+                <li class="nav-item">
+                  <a
+                    href="./masterData.html"
+                    class="nav-link"
+                    aria-disabled="true"
+                    ><i class="fa-brands fa-octopus-deploy fs-5"></i>
+                    <span>Master Data</span>
+                  </a>
+                </li>
+                <hr />
+
+                <li class="nav-item">
+                  <a href="./inventoryUpdate.html" class="nav-link" aria-disabled="true"
+                    ><i class="fa-solid fa-gear fs-5"></i>
+                    <span>Inventory Update</span>
+                  </a>
+                </li>
+                <hr />
+                <li class="nav-item">
+                  <a
+                    href="./newRequest.html"
+                    class="nav-link"
+                    aria-disabled="true"
+                    ><i class="fas fa-bell fs-5"></i>
+                    <span>New Request</span>
+                  </a>
+                </li>
+                <hr />
+                <li class="nav-item">
+                  <a href="./reports.html" class="nav-link" aria-disabled="true"
+                    ><i class="fa-solid fa-bug fs-5"></i> <span>Reports</span>
+                  </a>
+                </li>
+                <hr />
+                <li class="nav-item">
+                  <a href="./auth.html" class="nav-link" aria-disabled="true"
+                    ><i class="fas fa-user-shield fs-5"></i>
+                    <span>Role & Authentication</span>
+                  </a>
+                </li>
+                <hr />
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="roles-authentication-container">
+          <div class="container-fluid">
+            <div class="row auth-container" style="margin: 120px 0px 0px 334px">
+              <div class="col-12">
+                <div class="auth">
+                  <div
+                    class="auth-text d-flex justify-content-around align-items-center"
+                  >
+                    <div style="margin-right: 30%">
+                      <h3 class="fw-bold">User 7</h3>
+                      <p>
+                        Grant access to your Inventory by adding users and
+                        setting their roles to control who can do what. An
+                        agency can create Admins, Managers, Supervisors and
+                        General Users.
+                      </p>
+                      <p class="mt-5">
+                        7 have an assigned role to use Inventory in your agency
+                      </p>
+                    </div>
+                    <div>
+                      <a href="signup.html" class="btn text-light">Add a new user</a>
+                      <p class="mt-3">
+                        Choose from a list of your agency's employees, and
+                        assign roles in bulk
+                      </p>
+                      <input
+                        type="text"
+                        class="form-control mt-5"
+                        aria-describedby="passwordHelpInline"
+                        placeholder="Search to add a user..."
+                      />
+                    </div>
+                  </div>
+                  <div class="role-container">
+                    <div
+                      class="search-role d-flex justify-content-between align-items-center"
+                    >
+                      <div class="mt-5">
+                        <span> Name</span>
+                        <i class="fa-solid fa-right-left fa-rotate-90"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-describedby="passwordHelpInline"
+                          placeholder="Search..."
+                          style="width: 100%"
+                        />
+                      </div>
+                      <div class="mt-5">
+                        <span>Role</span> <br />
+                        <div class="btn-group">
+                          <button
+                            type="button"
+                            class="btn btn-secondary dropdown-toggle"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            Choose
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                Action
+                              </button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                Another action
+                              </button>
+                            </li>
+                            <li>
+                              <button class="dropdown-item" type="button">
+                                Something else here
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="users d-flex justify-content-between mt-3">
+                      <div class="user-name">
+                        <i class="fa-solid fa-user"></i>
+                        Hariom
+                      </div>
+                      <div class="user-roles d-flex">
+                        <div class="dropdown" style="margin-right: 10px">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            User
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="btn"
+                          >Remove User <i class="fas fa-trash"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <div class="users d-flex justify-content-between mt-3">
+                      <div class="user-name">
+                        <i class="fa-solid fa-user"></i>
+                        Hariom
+                      </div>
+                      <div class="user-roles d-flex">
+                        <div class="dropdown" style="margin-right: 10px">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            User
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="btn"
+                          >Remove User <i class="fas fa-trash"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <div class="users d-flex justify-content-between mt-3">
+                      <div class="user-name">
+                        <i class="fa-solid fa-user"></i>
+                        Hariom
+                      </div>
+                      <div class="user-roles d-flex">
+                        <div class="dropdown" style="margin-right: 10px">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            User
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="btn"
+                          >Remove User <i class="fas fa-trash"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <div class="users d-flex justify-content-between mt-3">
+                      <div class="user-name">
+                        <i class="fa-solid fa-user"></i>
+                        Hariom
+                      </div>
+                      <div class="user-roles d-flex">
+                        <div class="dropdown" style="margin-right: 10px">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            User
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="btn"
+                          >Remove User <i class="fas fa-trash"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <div class="users d-flex justify-content-between mt-3">
+                      <div class="user-name">
+                        <i class="fa-solid fa-user"></i>
+                        Hariom
+                      </div>
+                      <div class="user-roles d-flex">
+                        <div class="dropdown" style="margin-right: 10px">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            User
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="btn"
+                          >Remove User <i class="fas fa-trash"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                    <div class="users d-flex justify-content-between mt-3">
+                      <div class="user-name">
+                        <i class="fa-solid fa-user"></i>
+                        Hariom
+                      </div>
+                      <div class="user-roles d-flex">
+                        <div class="dropdown" style="margin-right: 10px">
+                          <button
+                            class="btn btn-secondary dropdown-toggle"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            User
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <a href="" class="btn"
+                          >Remove User <i class="fas fa-trash"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <br />
+                    <hr />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
