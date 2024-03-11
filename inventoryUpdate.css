@@ -156,6 +156,9 @@ div.container-fluid {
   .social-media .fa-twitter{
     display: none;
   }
+  .updated-btn button{
+    margin: 10px 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .search-bar {
